@@ -1,0 +1,23 @@
+{
+  "name": "tictactoe",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:ci": "FC_NUM_RUNS=1000 vitest run",
+    "test:coverage": "FC_NUM_RUNS=1000 vitest run --coverage",
+    "typecheck": "tsc -b",
+    "dev:server": "npm run dev -w @tictactoe/server",
+    "dev:client": "npm run dev -w @tictactoe/client"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.9",
+    "fast-check": "^4.9.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

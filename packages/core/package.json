@@ -1,0 +1,19 @@
+{
+  "name": "@tictactoe/core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./testing": "./src/testing.ts"
+  },
+  "types": "./src/index.ts",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "fast-check": "^4.9.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
